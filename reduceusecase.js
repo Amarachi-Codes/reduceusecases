@@ -24,7 +24,7 @@ let obj = [{ n: 5 }, { n: 9 }, { n: 13 }, { n: 25 }, { n: 40 }];
 const sumObj = (obj)=>{
     return obj.reduce((acc,curValue)=> acc + curValue.n, 0)
 }
-console.log(sumObj(obj));
+// console.log(sumObj(obj));
 
 //flattering an arry of arrays
 
@@ -33,6 +33,12 @@ let mulNumbers = [
     [1, 7],
     [12, 9],
   ]; //=> [3,5,1,7,12,9]
+
+ const oneArr = (mulNumbers)=>mulNumbers.reduce((acc, curValue)=>{
+        return acc.concat(curValue)
+ },[])
+
+ console.log(oneArr(mulNumbers));
 
 
   //counting an instances in an object
