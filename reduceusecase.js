@@ -40,21 +40,6 @@ let mulNumbers = [
 
  console.log(oneArr(mulNumbers));
 
-
-  //counting an instances in an object
-
-let clubs = [
-    "Chelsea",
-    "Arsenal",
-    "Chelsea",
-    "Totteham",
-    "Inter",
-    "Inter",
-    "Chelsea",
-  ];
-
-
-
   //remove duplicate;
 
 const arr = [2, 5, 7, 5, 12, 9, 7, 5, 4, 3, 5, 2, 5, 1, 4];
