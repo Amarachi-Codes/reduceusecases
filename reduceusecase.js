@@ -53,6 +53,15 @@ let clubs = [
     "Chelsea",
   ];
 
+
+
   //remove duplicate;
 
-// const arr = [2, 5, 7, 5, 12, 9, 7, 5, 4, 3, 5, 2, 5, 1, 4];
+const arr = [2, 5, 7, 5, 12, 9, 7, 5, 4, 3, 5, 2, 5, 1, 4];
+
+const removeDuplicate = arr.reduce((acc, curValue)=>{
+    if( acc.indexOf(curValue) === -1){
+        acc.push(curValue)
+    }return acc;
+}, [])
+console.log(removeDuplicate);
