@@ -7,8 +7,15 @@ function sum(numbers){
     for(let i = 0; i < numbers.length; i++){
         sum+=numbers[i];
     }return sum
-}console.log(sum(numbers));
+}
+// console.log(sum(numbers));
 
+//reduce function
+
+const sumUp = (numbers)=>{
+    return numbers.reduce((acc, curValue)=> acc + curValue, 0)
+}
+console.log(sumUp(numbers));
 
 //sum the values in an object array
 
@@ -37,4 +44,4 @@ let clubs = [
 
   //remove duplicate;
 
-const arr = [2, 5, 7, 5, 12, 9, 7, 5, 4, 3, 5, 2, 5, 1, 4];
+// const arr = [2, 5, 7, 5, 12, 9, 7, 5, 4, 3, 5, 2, 5, 1, 4];
