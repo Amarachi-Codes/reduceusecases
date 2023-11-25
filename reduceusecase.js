@@ -15,11 +15,16 @@ function sum(numbers){
 const sumUp = (numbers)=>{
     return numbers.reduce((acc, curValue)=> acc + curValue, 0)
 }
-console.log(sumUp(numbers));
+// console.log(sumUp(numbers));
 
 //sum the values in an object array
 
 let obj = [{ n: 5 }, { n: 9 }, { n: 13 }, { n: 25 }, { n: 40 }];
+
+const sumObj = (obj)=>{
+    return obj.reduce((acc,curValue)=> acc + curValue.n, 0)
+}
+console.log(sumObj(obj));
 
 //flattering an arry of arrays
 
